@@ -57,7 +57,7 @@ Open your browser.
 Navigate to http://192.168.1.x:61208.
 You should see the Glances dashboard.
 
-## Troubleshooting
+[^1]: Alternative methods and errors.## Troubleshooting
 + 502 Bad Gateway: Apache can't reach Glances.
 
 Check if Glances is running: sudo systemctl status glances-web.
@@ -72,8 +72,6 @@ Better fix: Add your user to the adm group: sudo usermod -aG adm your_username.
 + Slow Loading:
 The Pi 4 is fast, but if you have tons of processes, Glances might lag. It's usually fine though.
 
-  
-[^1]: Alternative methods and errors.
 ## Step 1.2 - Alternative installation method
 > [!NOTE]
 > ONLY use this method in case you get the following error message or similar
