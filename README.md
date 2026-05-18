@@ -12,7 +12,7 @@ This was done on a Raspberry PI 4, but I guess it could be done on any model
 `sudo apt install glances -y`
 
 > [!IMPORTANT]
-> For what I've experienced, running "sudo apt install glances -y" normally does not perform a good installation, due to broken packages errors or incompatibilities, for this type of issues refer to steps 1.2 - Alternative download methods[^1].
+> For what I've experienced, running "sudo apt install glances -y" normally does not perform a good installation, due to broken packages errors or incompatibilities, for this type of issues refer to the bottom of the document where general troubleshoot is mentioned.
 
 ## Step 2 Fire up glances
 `glances -w`
@@ -57,7 +57,7 @@ Open your browser.
 Navigate to http://192.168.1.x:61208.
 You should see the Glances dashboard.
 
-[^1]: Alternative methods and errors.## Troubleshooting
+## Alternative methods and errors.
 + 502 Bad Gateway: Apache can't reach Glances.
 
 Check if Glances is running: sudo systemctl status glances-web.
