@@ -25,21 +25,20 @@ Right now, if you reboot the Pi, Glances stops. Let's make it a service so it ru
 + Create the Service File
 `sudo nano /etc/systemd/system/glances-web.service`
 + Paste this in:
-------------------------------------------------------------
-[Unit]
-Description=Glances Web Server
-After=network.target
 
-[Service]
-Type=simple
-User=pi  # Change 'pi' to your actual username if different
-ExecStart=/usr/bin/glances -w
-Restart=always
-RestartSec=10
+`[Unit]`
+`Description=Glances Web Server`
+`After=network.target`
 
-[Install]
-WantedBy=multi-user.target
-------------------------------------------------------------
+`[Service]`
+`Type=simple`
+`User=pi  # Change 'pi' to your actual username if different`
+`ExecStart=/usr/bin/glances -w`
+`Restart=always`
+`RestartSec=10`
+
+`[Install]`
+`WantedBy=multi-user.target`
 
 > [!CAUTION]
 > Change User=pi to whatever username you use on the Pi. If you're logged in as admin, put admin.
